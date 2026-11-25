@@ -1,0 +1,777 @@
+.navigation {
+    
+    height: 10%;
+    margin-top: 20px;
+    border-radius: 80px; 
+    text-decoration: none;
+    display: flex;
+    border: black solid;
+}
+
+.links {
+    flex: 3;
+    margin: left;
+    border-radius: 40px;
+    
+}
+
+.links ul {
+    display: flex;
+    gap: 50px;
+    margin: left;
+    list-style: none;
+
+    margin-top: 25px;
+    margin-left: 10px;
+    
+} 
+
+.links a{
+    text-decoration: none;
+
+}
+
+.links a:hover{
+    cursor: pointer;
+    border-bottom: 2px solid red;
+}
+
+.links li a:hover{
+    
+    cursor: pointer;
+
+}
+
+
+.logo{
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.logo img{
+    width: 100%;
+    height: 40px;
+    
+    
+}
+
+.navigation .search-section{
+    flex: 2px;
+    padding: 10px;
+    padding-top: 2%;
+}
+
+.search-section input {
+    padding: 20%;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    margin-left: 30%;
+
+}
+
+.search-section input {
+    padding: 2%;
+    border-radius: 20px;
+    border: 2px;
+    border: 2px solid black;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 992px) {
+    .why-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .why-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+}
+
+
+
+
+
+/* Footer Styling */
+
+.footer {
+    background-color: #123b5d;
+    color: white;
+    padding: 60px 10% 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+.footer-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: white;
+}
+
+.logo span {
+    color: #00c2c2;
+}
+
+.footer-box h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #00c2c2;
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #d4e2ec;
+    margin-bottom: 10px;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 12px;
+}
+
+.footer-box ul li a {
+    color: #d4e2ec;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #00c2c2;
+    padding-left: 5px;
+}
+
+/* Social Media */
+
+.social-links {
+    text-align: center;
+    margin: 40px 0 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 8px 12px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #00c2c2;
+}
+
+/* Copyright */
+
+.copyright {
+    border-top: 1px solid #45647c;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.copyright p {
+    color: #d4e2ec;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 40px 6% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .social-links a {
+        margin: 8px;
+    }
+}
+
+
+/* end section footer */
+
+
+
+/* ================= GENERAL STYLING ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #263b50;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.adverts-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 8%;
+    min-height: 550px;
+    background: #eff8fc;
+}
+
+.adverts-hero-content {
+    flex: 1;
+    max-width: 570px;
+}
+
+.section-label {
+    color: #009c9c;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.adverts-hero-content h1 {
+    color: #123047;
+    font-size: 47px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.adverts-hero-content p {
+    color: #687b8c;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.adverts-hero-image {
+    flex: 1;
+}
+
+.adverts-hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 50, 80, 0.12);
+}
+
+
+/* ================= BUTTONS ================= */
+
+.advert-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.advert-btn,
+.advert-outline-btn {
+    display: inline-block;
+    padding: 14px 27px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.advert-btn {
+    background: #009c9c;
+    color: #ffffff;
+    border: 2px solid #009c9c;
+}
+
+.advert-btn:hover {
+    background: #007c7c;
+    border-color: #007c7c;
+    transform: translateY(-3px);
+}
+
+.advert-outline-btn {
+    border: 2px solid #009c9c;
+    color: #123047;
+}
+
+.advert-outline-btn:hover {
+    background: #009c9c;
+    color: #ffffff;
+}
+
+
+/* ================= SECTION HEADINGS ================= */
+
+.advert-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.advert-heading span {
+    color: #009c9c;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.advert-heading h2 {
+    color: #123047;
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.advert-heading p {
+    color: #718092;
+    font-size: 15px;
+}
+
+
+/* ================= ADVERT CATEGORIES ================= */
+
+.advert-categories {
+    padding: 85px 8%;
+}
+
+.advert-category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 23px;
+}
+
+.advert-category-card {
+    padding: 30px 22px;
+    text-align: center;
+    border: 1px solid #e4edf2;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: 0.3s;
+}
+
+.advert-category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 50, 80, 0.1);
+}
+
+.advert-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.advert-category-card h3 {
+    font-size: 19px;
+    color: #123047;
+    margin-bottom: 12px;
+}
+
+.advert-category-card p {
+    color: #718092;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.advert-category-card a {
+    color: #009c9c;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* ================= FEATURED ADVERTS ================= */
+
+.featured-adverts {
+    padding: 85px 8%;
+    background: #f5f9fc;
+}
+
+.featured-advert-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.advert-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 50, 80, 0.06);
+    transition: 0.3s;
+}
+
+.advert-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 50, 80, 0.12);
+}
+
+.advert-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.advert-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+.advert-card:hover .advert-image img {
+    transform: scale(1.05);
+}
+
+.advert-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #009c9c;
+    color: #ffffff;
+    padding: 7px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.advert-card-content {
+    padding: 25px;
+}
+
+.advert-date {
+    color: #009c9c;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.advert-card-content h3 {
+    color: #123047;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 12px 0;
+}
+
+.advert-card-content p {
+    color: #718092;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.advert-card-content a {
+    color: #009c9c;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* ================= HEALTH CAMPAIGNS ================= */
+
+.health-campaigns {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 90px 8%;
+}
+
+.campaign-image,
+.campaign-content {
+    flex: 1;
+}
+
+.campaign-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.campaign-content span {
+    color: #009c9c;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.campaign-content h2 {
+    color: #123047;
+    font-size: 34px;
+    line-height: 1.3;
+    margin: 15px 0;
+}
+
+.campaign-content p {
+    color: #718092;
+    margin-bottom: 20px;
+}
+
+.campaign-content ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.campaign-content li {
+    color: #526779;
+    margin-bottom: 12px;
+}
+
+.campaign-content li::before {
+    content: "✓";
+    color: #009c9c;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+
+/* ================= ANNOUNCEMENTS ================= */
+
+.advert-announcements {
+    padding: 85px 8%;
+    background: #f5f9fc;
+}
+
+.announcement-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.announcement-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    background: #ffffff;
+    padding: 28px 22px;
+    border-radius: 10px;
+    border: 1px solid #e5edf2;
+    transition: 0.3s;
+}
+
+.announcement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 50, 80, 0.08);
+}
+
+.announcement-icon {
+    font-size: 32px;
+}
+
+.announcement-card h3 {
+    color: #123047;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.announcement-card p {
+    color: #718092;
+    font-size: 14px;
+}
+
+
+/* ================= CONTACT CTA ================= */
+
+.advert-cta {
+    padding: 80px 8%;
+    text-align: center;
+    background: linear-gradient(
+        120deg,
+        #123047,
+        #087f8c
+    );
+}
+
+.advert-cta-content span {
+    color: #83e5df;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.advert-cta-content h2 {
+    color: #ffffff;
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.advert-cta-content p {
+    color: #d8e9f0;
+    max-width: 650px;
+    margin: 0 auto 28px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #008e91;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #d9f5f2;
+    transform: translateY(-3px);
+}
+
+
+/* ================= TABLET RESPONSIVENESS ================= */
+
+@media (max-width: 992px) {
+
+    .adverts-hero {
+        padding: 60px 5%;
+        gap: 30px;
+    }
+
+    .adverts-hero-content h1 {
+        font-size: 38px;
+    }
+
+    .advert-category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-advert-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .announcement-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE RESPONSIVENESS ================= */
+
+@media (max-width: 768px) {
+
+    .adverts-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .adverts-hero-content h1 {
+        font-size: 33px;
+    }
+
+    .advert-buttons {
+        justify-content: center;
+    }
+
+    .adverts-hero-image img {
+        height: 300px;
+    }
+
+    .advert-category-container,
+    .featured-advert-container,
+    .announcement-container {
+        grid-template-columns: 1fr;
+    }
+
+    .health-campaigns {
+        flex-direction: column;
+        padding: 60px 6%;
+        gap: 35px;
+    }
+
+    .campaign-image img {
+        height: 300px;
+    }
+
+    .campaign-content h2 {
+        font-size: 28px;
+    }
+
+    .advert-heading h2 {
+        font-size: 27px;
+    }
+
+    .advert-cta-content h2 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .adverts-hero-content h1 {
+        font-size: 28px;
+    }
+
+    .advert-buttons {
+        flex-direction: column;
+    }
+
+    .advert-btn,
+    .advert-outline-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .adverts-hero-image img {
+        height: 240px;
+    }
+
+    .advert-categories,
+    .featured-adverts,
+    .advert-announcements {
+        padding: 55px 6%;
+    }
+
+    .advert-heading h2 {
+        font-size: 25px;
+    }
+
+    .advert-card-content {
+        padding: 20px;
+    }
+
+}
+
+
+
+
